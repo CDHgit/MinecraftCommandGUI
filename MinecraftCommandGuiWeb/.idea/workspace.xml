@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b38a0140-fbd0-41b5-b13c-b06a12d7ae38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/minecraftCommandGui/minecraftCommandGui/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minecraftCommandGui/minecraftCommandGui/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/minecraftCommandGui/minecraftCommandGui/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="b38a0140-fbd0-41b5-b13c-b06a12d7ae38" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +147,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1294" height="1407" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
