@@ -20,9 +20,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-with open('secret_key.txt') as f:
-    SECRET_KEY = f.read().strip()
-SECRET_KEY = '*p74oh=l-e_7hc4obw=&8g7lh-^khr09$-*m9nl4iz(=@z7qfe'
+SECRET_KEY = ""
+for dirpath, dirnames, filenames in os.walk("."):
+    for filename in [f for f in filenames if f == "secret_key.txt"]:
+        with open(os.path.join(dirpath, filename)) as f:
+            SECRET_KEY = f.read().strip()
+
+if not SECRET_KEY:
+    exit(-1)
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -52,11 +58,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'minecraftCommandGui.urls'
-
+TEMPLATES_PATH = os.getcwd() + "\\minecraftCommandGui\\minecraftCommandGui\\templates\\minecraftCommandGui"
+print("TEMPLATE PATH: ", TEMPLATES_PATH)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATES_PATH],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

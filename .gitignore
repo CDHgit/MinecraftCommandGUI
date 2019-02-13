@@ -35,3 +35,5 @@ _ReSharper*/
 .vs/
 #Nuget packages folder
 packages/
+/MinecraftCommandGuiWeb/minecraftCommandGui/secret_key.txt
+/MinecraftCommandGuiWeb/runLaptopDjango.bat
